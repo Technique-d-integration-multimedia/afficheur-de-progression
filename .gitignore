@@ -1,7 +1,6 @@
 # Ce fichier permet d'ignorer les fichiers. Utile seulement pour le coordonnateur.
 # Si vous voulez le supprimer, allez-y fort.
 docs/
-.htaccess
 
 # macOS
 .DS_Store

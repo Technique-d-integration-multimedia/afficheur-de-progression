@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturellement TIM | par Jakob Bouchard |</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+
+  <!-- Kit d'icônes (lié à mon compte) -->
+  <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
+  <script>
+    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme === "sombre") {
+      // Ajoute l'attribut data-theme et le définit à sombre
+      document.documentElement.setAttribute('data-theme', 'sombre');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="title">Relativement <span class="title-accent">TIM</span></h1>
+
+      <div id="sandwich-menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <nav>
+        <a class="active" href="./">Cadrer</a>
+        <a href="coordonner.html">Coordonner</a>
+        <a href="crediter.html">Créditer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-full">
+      <div class="row">
+        <div class="col-12 hero" id="about">
+          <h2 class="page-title">Einstein chez les MILLENIUMS</h2>
+          <div class="divider"></div>
+          <h3>Le projet EinsTIM</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 section-title">Cadrer</h2>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4">
+              <p class="project-description">
+                D'un point de vue pratique, le projet EinsTIM consiste à créer
+                une bande-annonce sur la théorie de la relativité d'Einstein et
+                un savoir-faire, dans l'objectif de remettre un documentaire à
+                la fin de la session d'automne 2020. Pour ce faire, la cohorte
+                du programme d'intégration multimédia sera divisée en trois
+                factions : les cools, les cultivés et les dynamiques, en plus
+                des assistants. La cohorte travaillera sur la théorie de la
+                relativité, tandis que les assistants développerons sur ce
+                qu'est TIM, en analysant le cerveau.
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="project-description">
+                Avec ce projet, nous voulons prouver que TIM peut assurément
+                remplir tout mandat qui lui est donné de manière objective avec
+                l'infographie de référence qui lui est donnée. La mentalité
+                derrière ce projet est que tous sont des génies comme Einstein,
+                d'où le nom EinsTIM ; TIM devrait croire en soi et à son
+                potentiel. Certains reprochent aux milleniums leur dépendance à
+                la technologie. Avec EinsTIM, nous voulons embrasser cet aspect
+                de notre génération et en faire notre force.
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="project-description">
+                Il n'y a pas de limites pour TIM, car les possibilités sont
+                infinies. Avec ce projet, nous voulons développer notre
+                imagination. Certains croient ne pas en avoir, mais tous ont la
+                capacité d'inventer de nouvelles choses. L'éclair de génie,
+                contrairement à ce que l'on croit, n'est pas dû au hasard, mais
+                à nos connaissances. En effet, c'est dans notre cerveau que des
+                liens se forment entre des éléments de notre mémoire. C'est
+                pourquoi nous voulons développer cet aspect avec le projet EinsTIM.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2 class="col-12 section-title">La faction des assistants</h2>
+
+        <div class="col-12">
+          <img src="img/photo-faction.jpg" alt="La faction des assistants">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Copyright &copy; </div>
+
+      <div class="footer-right">
+        <div id="theme-toggle">
+          <span id="theme-toggle-label"></span>
+          <span id="theme-toggle-icon" class="fas fa-moon"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/themeChanger.js"></script>
+</body>
+</html>

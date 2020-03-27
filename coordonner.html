@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturellement TIM | par Jakob Bouchard |</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+
+  <!-- Kit d'icônes (lié à mon compte) -->
+  <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
+  <script>
+    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme === "sombre") {
+      // Ajoute l'attribut data-theme et le définit à sombre
+      document.documentElement.setAttribute('data-theme', 'sombre');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="title">Relativement <span class="title-accent">TIM</span></h1>
+
+      <div id="sandwich-menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <nav>
+        <a href="./">Cadrer</a>
+        <a class="active" href="coordonner.html">Coordonner</a>
+        <a href="crediter.html">Créditer</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="with-sidebar">
+    <div class="fas fa-angle-right" id="sidebar-button"></div>
+    <aside>
+      <div class="sidebar">
+        <h4 class="sidebar-section-toggle">Cohorte</h4>
+        <div class="sidebar-section">
+          <ul>
+            <li><a class="faction-relax" href="https://rtim.integrateurmultimediaalexandrelaporte.com/">
+              <span class="fas fa-couch fa-fw"></span> Alexandre Laporte
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.alexitessier.com/">
+              <span class="fas fa-couch fa-fw"></span> Alexi Tessier
+            </a></li>
+            <li><a class="faction-relax" href="http://rtim.tony-manyfonctionality.com/">
+              <span class="fas fa-couch fa-fw"></span> Antoine Morissette
+            </a></li>
+            <li><a class="faction-dynamiques" href="https://rtim.badrwebzer.com/">
+              <span class="fas fa-fire fa-fw"></span> Badr Haddouch
+            </a></li>
+            <li><a class="faction-assistants" href="http://rtim.camcaron-multimedia.com/">
+              <span class="fas fa-hands-helping fa-fw"></span> Camille Caron
+            </a></li>
+            <li><a class="faction-cultives" href="https://rtim.cedric-laroche.com/">
+              <span class="fas fa-university fa-fw"></span> Cédric Laroche
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.daya-media.com/">
+              <span class="fas fa-couch fa-fw"></span> Dayana Fridman
+            </a></li>
+            <li><a class="faction-assistants" href="http://rtim.ec-media.ca/">
+              <span class="fas fa-hands-helping fa-fw"></span> Étienne Chandonnet
+            </a></li>
+            <li><a class="faction-assistants" href="https://rtim.creationsjb.com">
+              <span class="fas fa-hands-helping fa-fw"></span> Jakob Bouchard
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.jasminecord-multimedia.com/">
+              <span class="fas fa-couch fa-fw"></span> Jasmine Cordeiro
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.joberg-design.com/">
+              <span class="fas fa-couch fa-fw"></span> Jonathan Bergeron
+            </a></li>
+            <li><a class="faction-dynamiques" href="http://rtim.mistercyr.com/">
+              <span class="fas fa-fire fa-fw"></span> Jonathan Cyr
+            </a></li>
+            <li><a class="faction-dynamiques" href="https://rtim.jvalleedesign.com/">
+              <span class="fas fa-fire fa-fw"></span> Justin Vallée
+            </a></li>
+            <li><a class="faction-cultives" href="https://rtim.louvensdemesmin.com/">
+              <span class="fas fa-university fa-fw"></span> Louvens Demesmin
+            </a></li>
+            <li><a class="faction-dynamiques" href="https://rtim.matthieud-multimedia.com/">
+              <span class="fas fa-fire fa-fw"></span> Matthieu Dénommé
+            </a></li>
+            <li><a class="faction-cultives" href="https://rtim.milicacreations.com/">
+              <span class="fas fa-university fa-fw"></span> Milica Markovic
+            </a></li>
+            <li><a class="faction-dynamiques" href="https://rtim.creation-natty.com/">
+              <span class="fas fa-fire fa-fw"></span> Natacha Marcil
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.nicolasfleurot.ca/">
+              <span class="fas fa-couch fa-fw"></span> Nicolas Fleurot
+            </a></li>
+            <li><a class="faction-dynamiques" href="http://rtim.pdesrosiers.com/">
+              <span class="fas fa-fire fa-fw"></span> Paul-Arnaud Desrosiers
+            </a></li>
+            <li><a class="faction-cultives" href="https://rtim.philendlessprojects.com/">
+              <span class="fas fa-university fa-fw"></span> Philippe Guimond-Trahan
+            </a></li>
+            <li><a class="faction-cultives" href="https://rtim.therienmedias.com/">
+              <span class="fas fa-university fa-fw"></span> Rébecca Thérien
+            </a></li>
+            <li><a class="faction-cultives" href="http://rtim.sbd-multimedia.net/">
+              <span class="fas fa-university fa-fw"></span> Stéphanie Bournival-Desbiens
+            </a></li>
+            <li><a class="faction-dynamiques" href="http://rtim.pxstephc.com/">
+              <span class="fas fa-fire fa-fw"></span> Stéphanie Charbonneau Saumier
+            </a></li>
+            <li><a class="faction-cultives" href="http://rtim.vincent-audiovisuel.com/">
+              <span class="fas fa-university fa-fw"></span> Vincent Rochon
+            </a></li>
+            <li><a class="faction-relax" href="https://rtim.xavierbeaudry.com/">
+              <span class="fas fa-couch fa-fw"></span> Xavier Beaudry
+            </a></li>
+          </ul>
+        </div>
+
+        <h4 class="sidebar-section-toggle">Tutoriels</h4>
+        <div class="sidebar-section">
+          <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U" target="_blank">
+              Blender 2.8 - Créer un beigne
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=imkSdlbXB_U" target="_blank">
+              Blender 2.8 - Papillons de nuit
+            </a></li>
+            <li><a href="https://www.derekkedziora.com/blog/dark-mode" target="_blank">
+              Programmation - Mode sombre
+            </a></li>
+            <li><a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">
+              Programmation - Objets
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=-y3rL2qU7fU" target="_blank">
+              VFX - Little Planet
+            </a></li>
+          </ul>
+        </div>
+
+        <h4 class="sidebar-section-toggle">Influenceurs</h4>
+        <div class="sidebar-section">
+          <ul>
+            <li><a href="https://www.youtube.com/user/CaptainDisillusion" target="_blank">
+              Captain Disillusion
+            </a></li>
+            <li><a href="https://www.youtube.com/channel/UCy1f4m64dwCwk8CBZ_vHfPg/" target="_blank">
+              CGMatter
+            </a></li>
+            <li><a href="https://www.youtube.com/user/CorridorDigital" target="_blank">
+              Corridor Digital
+            </a></li>
+            <li><a href="https://www.youtube.com/user/HardwareCanucks" target="_blank">
+              HardwareCanucks
+            </a></li>
+            <li><a href="https://www.youtube.com/user/mrdodobird" target="_blank">
+              Ian Hubert
+            </a></li>
+            <li><a href="https://www.youtube.com/user/Kurzgesagt" target="_blank">
+              Kurzgesagt
+            </a></li>
+            <li><a href="https://www.youtube.com/user/marquesbrownlee" target="_blank">
+              Marques Brownlee
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <h2 class="col-12 section-title">Coordonner</h2>
+          <div class="col-10" id="section-selector">
+            <h3>Contribution</h3>
+            <label for="registres">
+              <input type="radio" name="types-de-documents" id="registres" checked>
+              Registres
+            </label>
+            <label for="medias">
+              <input type="radio" name="types-de-documents" id="medias">
+              Médias
+            </label>
+            <h3>Cadence</h3>
+            <label for="aide-memoire">
+              <input type="radio" name="types-de-documents" id="aide-memoire">
+              Aide-Mémoire
+            </label>
+            <label for="logigramme">
+              <input type="radio" name="types-de-documents" id="logigramme">
+              Logigramme
+            </label>
+          </div>
+          <div class="col-2">
+            <span id="mise-a-jour">adad</span>
+            <br>
+            <a href="docs/Bouchard_Jakob-rtim.zip" download>Télécharger le code</a>
+          </div>
+        </div>
+
+        <div class="coordination-section">
+          <div class="row">
+            <div class="coordination-infos" id="registres-info">
+              <h2 class="col-12 section-title">Registres</h2>
+              <div class="col-12">
+                <p>
+                  Voici les registres<br>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Maxime aperiam consectetur vitae voluptates fugiat cum
+                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
+                  fugiat, iste recusandae nisi iusto?
+                </p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="first-col">Mon registre <strong>personnel</strong></td>
+                      <td class="second-col"><a href="docs/BOU_Jakob_Personnel.docx">#1_.docx</a></td>
+                      <td><a href="#">#1_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td class="first-col">Mon registre <strong>analyser</strong> les AdP</td>
+                      <td class="second-col"><a href="docs/BOU_Jakob_26_Analyser_.docx">analyser_.docx</a></td>
+                      <td><a href="#">#1_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Le registre de ma <strong>faction</strong></td>
+                      <td><a href="#">#2_.doc</a></td>
+                      <td><a href="#">#2_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Mon registre de <strong>développement</strong></td>
+                      <td><a href="#">#3_.doc</a></td>
+                      <td><a href="#">#3_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td>Mon registre de <strong>scénarisation</strong></td>
+                      <td><a href="#">#4_.doc</a></td>
+                      <td><a href="#">#4_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td>Mon registre de <strong>traitement</strong></td>
+                      <td><a href="#">#5_.doc</a></td>
+                      <td><a href="#">#5_.pdf</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="coordination-infos" id="medias-info">
+              <h2 class="col-12 section-title">Médias</h2>
+              <div class="col-12">
+                <p>
+                  Voici les médias<br>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Maxime aperiam consectetur vitae voluptates fugiat cum
+                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
+                  fugiat, iste recusandae nisi iusto?
+                </p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="medias-col">A &ndash; Mon afficheur de progression</td>
+                      <td><a href="#">A &ndash; Dossier .zip | ou Chemin d'accès</a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>B &ndash; Le montage de ma <strong>faction</strong></td>
+                      <td><a href="#">B &ndash; Dossier .zip | ou Chemin d'accès</a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>#1 &ndash; titre approuvé</td>
+                      <td><a href="#">#1 &ndash; Dossier .zip | ou Chemin d'accès</a></td>
+                    </tr>
+                    <tr>
+                      <td>#2 &ndash; titre approuvé</td>
+                      <td><a href="#">#2 &ndash; Dossier .zip | ou Chemin d'accès</a></td>
+                    </tr>
+                    <tr>
+                      <td>#3 &ndash; titre approuvé</td>
+                      <td><a href="#">#3 &ndash; Dossier .zip | ou Chemin d'accès</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="coordination-infos" id="aide-memoire-info">
+              <h2 class="col-12 section-title">Aide-Mémoire</h2>
+              <div class="col-12">
+                <p>
+                  Voici l'aide-mémoire<br>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Maxime aperiam consectetur vitae voluptates fugiat cum
+                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
+                  fugiat, iste recusandae nisi iusto?
+                </p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="aide-mem-col">Notes de cours</td>
+                      <td><a href="#">#1_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td>Le registre de ma faction</td>
+                      <td><a href="#">#2_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td>Dossier de référence &ndash; SUJET</td>
+                      <td><a href="#">#3_.pdf</a></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Bibliothèque TIM</strong> &ndash; INDEX</td>
+                      <td><a href="#">#4_.pdf</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="coordination-infos" id="logigramme-info">
+              <h2 class="col-12 section-title">Logigramme</h2>
+              <div class="col-12">
+                <img src="img/logigramme.jpg" alt="Logigramme">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"></div>
+
+      <div class="footer-right">
+        <div id="theme-toggle">
+          <span id="theme-toggle-label"></span>
+          <span id="theme-toggle-icon" class="fas fa-moon"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/themeChanger.js"></script>
+  <script src="js/coordonner.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturellement TIM | par Jakob Bouchard |</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+
+  <!-- Kit d'icônes (lié à mon compte) -->
+  <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
+  <script>
+    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme === "sombre") {
+      // Ajoute l'attribut data-theme et le définit à sombre
+      document.documentElement.setAttribute('data-theme', 'sombre');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="title">Relativement <span class="title-accent">TIM</span></h1>
+
+      <div id="sandwich-menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <nav>
+        <a href="./">Cadrer</a>
+        <a href="coordonner.html">Coordonner</a>
+        <a class="active" href="crediter.html">Créditer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-full">
+      <div class="row">
+        <div class="col-12 hero">
+          <h2 class="page-title">Créditer</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-full">
+      <div class="row">
+        <div class="col-4">
+          <div class="project-container">
+            <div class="project-card project-1">
+              <div class="project-info">
+                <h3 class="project-title">Bande-Annonce</h3>
+                <h4 class="project-subtitle">Automne 2019</h4>
+                <div class="project-rating" id="bande-annonce"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
+                <!-- <p class="project-description">
+                  La première partie du projet EinsTIM est la création d'une
+                  bande-annonce d'une durée d'une durée de 1 minute à 1 minute 30
+                  secondes. pour le documentaire que les élèves auront à faire lors
+                  de la session d'Automne 2020. Les intégrateur doivent remettre une
+                  bande-annonce présentant la théorie de la relativité d'Einstein,
+                  tandis que le sujet des assistants est le cerveau de TIM. Pour ce
+                  faire, la plus grande partie du travail est de scénariser la
+                  bande-annonce. En effet, pour utiliser son temps de manière
+                  efficace il faut bien planifier le contenu de celle-ci :
+                  narration, durée de chaque plan, éléments importants à inclure,
+                  etc.
+                </p> -->
+                <a href="#" class="project-download">Télécharger</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="project-container">
+            <div class="project-card project-2">
+              <div class="project-info">
+                <h3 class="project-title">Savoir-Faire</h3>
+                <h4 class="project-subtitle">Hiver 2020</h4>
+                <div class="project-rating" id="savoir-faire"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
+                <!-- <p class="project-description">
+                  La deuxième partie partie du projet EinsTIM est le savoir-faire,
+                  qui est la "maquette" du documentaire final. Le savoir-faire
+                  consiste à inclure les didascalies, plans et médias qui seront
+                  utilisés, pour montrer à quoi ressemblera le documentaire final.
+                  En d'autres mots, il s'agit de faire le squelette du documentaire.
+                  Cela implique tout le contenu, autant du point de vue informatif
+                  que celui du design. Bien que certains effets qu'on y trouve sont
+                  assez rudimentaires, on peut tout de même facilement avoir une
+                  bonne idée du résultat final. La durée du savoir-faire sera la
+                  même que celle du documentaire, soit d'environ 20 minutes.
+                </p> -->
+                <a href="#" class="project-download">Télécharger</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="project-container">
+            <div class="project-card project-3">
+              <div class="project-info">
+                <h3 class="project-title">Documentaire</h3>
+                <h4 class="project-subtitle">Automne 2020</h4>
+                <div class="project-rating" id="documentaire"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
+                <!-- <p class="project-description">
+                  La troisième et dernière remise du projet EinsTIM est bien
+                  évidemment le documentaire. En effet, les remises antérieures et
+                  tout le travail fait en classe depuis la session d’automne 2019
+                  ont été dans l’objectif de faire ce documentaire d’environ 20
+                  minutes sur la théorie de la relativité d’Einstein
+                  (intégrateurs) et le cerveau de TIM (assistants).
+                </p> -->
+                <a href="#" class="project-download">Télécharger</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"></div>
+
+      <div class="footer-right">
+        <div id="theme-toggle">
+          <span id="theme-toggle-label"></span>
+          <span id="theme-toggle-icon" class="fas fa-moon"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/themeChanger.js"></script>
+  <script src="js/rating.js"></script>
+</body>
+</html>

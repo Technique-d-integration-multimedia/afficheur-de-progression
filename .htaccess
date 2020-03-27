@@ -2,4 +2,4 @@
 # Empêcher l'accès au dossier .git
 # ==================================================================
 
-RedirectMatch 404 /\.git
+RedirectMatch 403 /\.git

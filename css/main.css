@@ -4,7 +4,7 @@ html, html[data-theme="clair"] { /* Variables mode clair */
   --main-color: #33312e;         /* Couleur principale */
   --main-elements-color: #fff;   /* Couleur des éléments dans la couleur principale (doit faire contraste) */
   --aside-color: #eee;
-  --accent-color: #e30512;       /* Couleur d'accent */
+  --accent-color: #00b11d;       /* Couleur d'accent */
   --background-color: #fff;
   --text-color: #333;            /* Couleur du texte */
   --secondary-text-color: #777;
@@ -14,13 +14,13 @@ html[data-theme="sombre"] {        /* Variables mode sombre */
   --main-color: #43403d;         /* Couleur principale */
   --main-elements-color: #fff;   /* Couleur des éléments dans la couleur principale (doit faire contraste) */
   --aside-color: #333;
-  --accent-color: #fa1e2d;       /* Couleur d'accent */
+  --accent-color: #00cf23;       /* Couleur d'accent */
   --background-color: #222;
   --text-color: #ddd;            /* Couleur du texte */
   --secondary-text-color: #aaa;
 }
 
-/*==================== lasses générales ====================*/
+/*==================== Classes générales ====================*/
 html {
   position: relative;
   box-sizing: border-box;

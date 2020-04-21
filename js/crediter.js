@@ -54,10 +54,14 @@ window.onload = intializePlayer;
 function playPause(){
 	if(vid.paused){
 		vid.play();
-		playbtn.style.background = "url(img/pause.png)";
+		// playbtn.style.background = "url(img/pause.png)";
+		playbtn.classList.remove("fa-play");
+		playbtn.classList.add("fa-pause");
 	} else {
 		vid.pause();
-		playbtn.style.background = "url(img/play.png)";
+		// playbtn.style.background = "url(img/play.png)";
+		playbtn.classList.remove("fa-pause");
+		playbtn.classList.add("fa-play");
 	}
 }
 
@@ -87,10 +91,14 @@ function seektimeupdate(){
 function vidmute(){
 	if(vid.muted){
 		vid.muted = false;
-		mutebtn.style.background = "url(img/unmute.png)";
+		// mutebtn.style.background = "url(img/unmute.png)";
+		mutebtn.classList.remove("fa-volume-mute");
+		mutebtn.classList.add("fa-volume-up");
 	} else {
 		vid.muted = true;
-		mutebtn.style.background = "url(img/mute.png)";
+		// mutebtn.style.background = "url(img/mute.png)";
+		mutebtn.classList.remove("fa-volume-up");
+		mutebtn.classList.add("fa-volume-mute");
 	}
 }
 

@@ -22,7 +22,7 @@
 
 <body>
 <!--MENU-->
-  <header>
+  <header id="sticky-header">
     <div class="header-inner">
       <h1 class="title">Camille, Étienne et Jakob <!--<span class="title-accent">TIM</span>--></h1>
 
@@ -51,118 +51,158 @@
     </div>
 
 <!--CONTENU-->
-    <div class="container-full">
+    <div class="container-full margin_projects">
       <div class="row">
-    <!--Project 1-->
+    <!--Project 1 : Jakob-->
         <div class="col-4">
           <div class="project-container">
       <!-- Trigger/Open The Modal -->
-          <img class="thumbnail" id="myThumb" src="img/thumbnail.jpg" />
+			<div class="thumbnail-container" id="myThumb1" onclick="openModal1(); stickHeader(); stickFooter();">
+			  <img class="thumbnail" src="img/thumbnail_camille.jpg" />
+			  <div class="overlay">
+			    <div class="icon"><i class="fas fa-play"></i></div>
+			  </div>
+			</div>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content video_player_box">
-          <!--<div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-          </div>-->
-          <div class="modal-body">
-            <div id="video_player_box">
-              <video id="my_video" width="100%">
-              <source src="videos/CAR_Camille_BandeAnnonce_.mp4" type="video/mp4">
-              </video>
-              <div id="video_controls_bar">
-              <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
-              <span id="controls_left">
-                <!-- <button id="playpausebtn"></button> -->
-                <span id="playpausebtn" class="fas fa-play"></span>
-                <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
-              </span>
-              <span id="controls_right">
-                <!-- <button id="mutebtn"></button> -->
-                <span id="mutebtn" class="fas fa-volume-up"></span>
-                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-                <!-- <button id="fullscreenbtn"><img src="img/fullscreen.png" /></button> -->
-                <span id="fullscreenbtn" class="fas fa-expand"></span>
-                <span class="close">&times;</span>
-              </span>
+			<div id="myModal1" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content video_player_box">
+				<div class="modal-body">
+				  <div class="video_player_box">
+					<video id="my_video1" width="100%">
+					  <source src="videos/CAR_Camille_StopMotion_.mp4" type="video/mp4">
+					</video>
+					<div class="video_controls_bar">
+					  <input id="seekslider1" type="range" min="0" max="100" value="0" step="1">
+					  <span class="controls_left">
+						<span id="playpausebtn1" class="fas fa-play"></span>
+						<span id="curtimetext1">00:00</span> / <span id="durtimetext1">00:00</span>
+					  </span>
+					  <span class="controls_center">
+						<a href="videos/CAR_Camille_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+					  </span>
+					  <span class="controls_right">
+						<span id="mutebtn1" class="fas fa-volume-up"></span>
+						<input id="volumeslider1" type="range" min="0" max="100" value="100" step="1">
+						<span id="fullscreenbtn1" class="fas fa-expand"></span>
+						<span class="close"><a href="cadrer.html">&times;</a></span><!-- ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X-->
+					  </span>
+					</div>
+					</div>
+				</div>
               </div>
-            </div>
-          </div>
-          <!--<div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>-->
-          </div>
-        </div>
-          </div>
-        </div>
-
-    <!--Project 2-->
+			</div>
+			<div class="texte_video">
+			  <p>Le savoir-faire des REMARQUABLEMENT TIM</p></br>
+		      <p>Camille Caron</br>7 mai 2020</p></br>
+		      <p>J'ai eu des problèmes lors de l'exportation. C'est pourquoi l'audio coupe et certaines transitions ne sont pas fluides. Je n'ai pas réussi à trouver ce qui causait ces problèmes. Quant au tournage, j'aurais pu prendre plus de photos pour assurer de meilleures transitions. De plus, j'ai fait l'erreur de ne pas vérifier le focus de ma caméra avant de commencer et malgré mes précautions pour l'éclairage, on voit tout de même une variation d'une photo à l'autre.</p>
+			</div>	
+	      </div>
+		</div>
+		
+	<!--Project 2 : Camille-->
         <div class="col-4">
           <div class="project-container">
       <!-- Trigger/Open The Modal -->
-        <img id="myThumb" src="img/thumbnail.jpg" onclick="myFunction()" />
-
+			<div class="thumbnail-container" id="myThumb2" onclick="openModal2(); stickHeader(); stickFooter()">
+			  <img class="thumbnail" src="img/thumbnail_camille.jpg" />
+			  <div class="overlay">
+			    <div class="icon"><i class="fas fa-play"></i></div>
+			  </div>
+			</div>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content video_player_box">
-          <!--<div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-          </div>-->
-          <div class="modal-body">
-            <div id="video_player_box">
-              <video id="my_video" width="100%">
-              <source src="videos/CAR_Camille_BandeAnnonce_.mp4" type="video/mp4">
-              </video>
-              <div id="video_controls_bar">
-              <!-- <button id="playpausebtn"></button> -->
-              <span id="playpausebtn" class="fas fa-play"></span>
-              <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
-              <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
-              <!-- <button id="mutebtn"></button> -->
-              <span id="mutebtn" class="fas fa-volume-up"></span>
-              <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-              <!-- <button id="fullscreenbtn"><img src="img/fullscreen.png" /></button> -->
-              <button id="fullscreenbtn"><span class="fas fa-expand"></span></button>
-              <span class="close">&times;</span>
+			<div id="myModal2" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content video_player_box">
+				<div class="modal-body">
+				  <div class="video_player_box">
+					<video id="my_video2" width="100%">
+					  <source src="videos/CAR_Camille_StopMotion_.mp4" type="video/mp4">
+					</video>
+					<div class="video_controls_bar">
+					  <input id="seekslider2" type="range" min="0" max="100" value="0" step="1">
+					  <span class="controls_left">
+						<span id="playpausebtn2" class="fas fa-play"></span>
+						<span id="curtimetext2">00:00</span> / <span id="durtimetext2">00:00</span>
+					  </span>
+					  <span class="controls_center">
+						<a href="videos/CAR_Camille_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+					  </span>
+					  <span class="controls_right">
+						<span id="mutebtn2" class="fas fa-volume-up"></span>
+						<input id="volumeslider2" type="range" min="0" max="100" value="100" step="1">
+						<span id="fullscreenbtn2" class="fas fa-expand"></span>
+						<span class="close"><a href="cadrer.html">&times;</a></span><!-- ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X-->
+					  </span>
+					</div>
+					</div>
+				</div>
               </div>
-            </div>
-          </div>
-          <!--<div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>-->
-          </div>
-        </div>
-          </div>
-        </div>
-
-    <!--Project 3-->
+			</div>
+			<div class="texte_video">
+			  <p>Titre</p></br>
+		      <p>Nom de l'auteur</br>Date de réalisation</p></br>
+		      <p>Commentaire/Qualificatif</p>
+			</div>	
+	      </div>
+		</div>
+		
+	<!--Project 3 : Étienne-->
         <div class="col-4">
           <div class="project-container">
-            <a href="#" class="project-download">Télécharger</a>
-          </div>
-        </div>
+      <!-- Trigger/Open The Modal -->
+			<div class="thumbnail-container" id="myThumb3" onclick="openModal3(); stickHeader(); stickFooter()">
+			  <img class="thumbnail" src="img/thumbnail_camille.jpg" />
+			  <div class="overlay">
+			    <div class="icon"><i class="fas fa-play"></i></div>
+			  </div>
+			</div>
+        <!-- The Modal -->
+			<div id="myModal3" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content video_player_box">
+				<div class="modal-body">
+				  <div id="video_player_box3">
+					<video id="my_video3" width="100%">
+					  <source src="videos/CAR_Camille_StopMotion_.mp4" type="video/mp4">
+					</video>
+					<div class="video_controls_bar">
+					  <input id="seekslider3" type="range" min="0" max="100" value="0" step="1">
+					  <span class="controls_left">
+						<span id="playpausebtn3" class="fas fa-play"></span>
+						<span id="curtimetext3">00:00</span> / <span id="durtimetext3">00:00</span>
+					  </span>
+					  <span class="controls_center">
+						<a href="videos/CAR_Camille_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+					  </span>
+					  <span class="controls_right">
+						<span id="mutebtn3" class="fas fa-volume-up"></span>
+						<input id="volumeslider3" type="range" min="0" max="100" value="100" step="1">
+						<span id="fullscreenbtn3" class="fas fa-expand"></span>
+						<span class="close"><a href="cadrer.html">&times;</a></span><!-- ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X-->
+					  </span>
+					</div>
+					</div>
+				</div>
+              </div>
+			</div>
+			<div class="texte_video">
+			  <p>Titre</p></br>
+		      <p>Nom de l'auteur</br>Date de réalisation</p></br>
+		      <p>Commentaire/Qualificatif</p>
+			</div>
+	      </div>
+		</div>
       </div>
     </div>
   </main>
   
-  <footer>
+  <footer id="sticky-footer">
     <div class="footer-inner">
       <div class="footer-left">Copyright &copy;&nbsp;
-    <span id="copyright-name"></span>&nbsp;
-        <span id="copyright-year"></span>
+		<span id="copyright-name"></span>&nbsp;
+        <span id="copyright-year"></span>&nbsp;
       </div>
-    
-    
-  <div id="myDIV">
-    <!-- <a href="videos/CAR_Camille_BandeAnnonce_.mp4" download><img src="img/download.png" /></a> -->
-    <a href="videos/CAR_Camille_BandeAnnonce_.mp4" download><span class="fas fa-download"></span></a>
-  </div>
-
       <div class="footer-right">
         <div id="theme-toggle">
           <span id="theme-toggle-label"></span>

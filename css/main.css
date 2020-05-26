@@ -20,7 +20,7 @@ html[data-theme="sombre"] {        /* Variables mode sombre */
   --secondary-text-color: #aaa;
 } 
 
-/*==================== Classes générales ====================*/
+/*==================== Classes générales ====================*/ 
 html {
   position: relative;
   box-sizing: border-box;

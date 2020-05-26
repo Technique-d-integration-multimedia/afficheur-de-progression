@@ -4,33 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturellement TIM | par Jakob Bouchard |</title>
-
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
-
-  <!-- Kit d'icônes (lié à mon compte) -->
+<!--Icônes-->
   <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
   <script>
-    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+// Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
     const localTheme = localStorage.getItem('theme');
     if (localTheme === "sombre") {
-      // Ajoute l'attribut data-theme et le définit à sombre
+// Ajoute l'attribut data-theme et le définit à sombre
       document.documentElement.setAttribute('data-theme', 'sombre');
     }
   </script>
 </head>
 
+<script>/*
+----------------------------------
+!!!!!LÉGENDE DES COMMENTAIRES!!!!!
+----------------------------------
+  
+<!--|||SECTION: LOREMIPSUM|||-->
+INDIQUE UN ENSEMBLE DISTINCT DE LA PAGE
+  
+ <!-- LoremIpsum -->
+ INDIQUE UNE SOUS-SECTION DE LA PAGE
+  
+ <!-- *LoremIpsum* -->
+ INDIQUE UNE FONCTION JAVASCRIPT
+  
+----------------------------------
+ */</script>
+
 <body>
+  <!--|||SECTION: HEADER|||-->
   <header>
-    <div class="header-inner">
-      <h1 class="title">Naturellement <span class="title-accent">TIM</span></h1>
-
-      <div id="sandwich-menu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-
+    <!--Gauche du Header-->
+      <div class="header-inner">
+        <h1 class="title">Camille, Étienne et Jakob</h1>
+        <!--Menu pour mobile-->
+        <div id="sandwich-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <!--Droite du Header-->
       <nav>
         <a class="active" href="./">Cadrer</a>
         <a href="coordonner.html">Coordonner</a>
@@ -40,6 +57,7 @@
   </header>
 
   <main>
+  <!--|||SECTION: BANIÈRE|||-->
     <div class="container-full">
       <div class="row">
         <div class="col-12 hero" id="about">
@@ -49,54 +67,60 @@
         </div>
       </div>
     </div>
-
+    
+    <!--|||SECTION: PARAGRAPHES DE PRÉSENTATION|||-->
     <div class="container">
       <div class="row">
         <h2 class="col-12 section-title">Cadrer</h2>
 
         <div class="col-12">
           <div class="row">
+            <!--PARAGRAPHE01-->
             <div class="col-4">
               <p class="project-description">
-                D'un point de vue pratique, le projet EinsTIM consiste à créer
-                une bande-annonce sur la théorie de la relativité d'Einstein et
-                un savoir-faire, dans l'objectif de remettre un documentaire à
-                la fin de la session d'automne 2020. Pour ce faire, la cohorte
-                du programme d'intégration multimédia sera divisée en trois
-                factions : les relax, les cultivés et les dynamiques, en plus
-                des assistants. La cohorte travaillera sur la théorie de la
-                relativité, tandis que les assistants développerons sur ce
-                qu'est TIM, en analysant le cerveau.
+                Pour ce qui en est des assistants, nous perfectionnons et corrigeons 
+                l’afficheur de progression. Maintenant que les éléments sont testés et 
+                bien intégré, il ne reste qu’à les perfectionner et les structurer aussi 
+                professionnellement que possible. Ce qui veut dire, épurer l’information 
+                superflue, commenter intelligemment et édenter conséquemment. De plus, 
+                la nouvelle fonction de communication (discord) et les fonctions vidéo 
+                sont maintenant opérationnelles. Également, il a fallu demeurer créatif 
+                et intelligent, dans nos méthodes de travail, alors de nouvelles techniques
+                de travail ont été de mises avec le partage de fichier, GitHub, un standard 
+                dans l’industrie.
               </p>
             </div>
+
+            <!--PARAGRAPHE02-->
             <div class="col-4">
               <p class="project-description">
-                Avec ce projet, nous voulons prouver que TIM peut assurément
-                remplir tout mandat qui lui est donné de manière objective avec
-                l'infographie de référence qui lui est donnée. La mentalité
-                derrière ce projet est que tous sont des génies comme Einstein,
-                d'où le nom EinsTIM ; TIM devrait croire en soi et à son
-                potentiel. Certains reprochent aux milleniums leur dépendance à
-                la technologie. Avec EinsTIM, nous voulons embrasser cet aspect
-                de notre génération et en faire notre force.
+                La communication est la base du travail d’un intégrateur de ce nom. 
+                Alors, quoi faire quand aucun contact humain est possible? Dès lors, le 
+                télétravail s’impose. Les intégrateurs ne peuvent s’en cacher, car ils 
+                sont au front de l’élaboration de systèmes de communications efficaces. 
+                C’est avec courage et fierté qu’il en est à TIM de structurer le chaos 
+                de cette situation sans précédent. Il n’y a pas d’incertitude, seulement 
+                un peu de travail pour un TIM.
               </p>
             </div>
+            <!--PARAGRAPHE03-->
             <div class="col-4">
               <p class="project-description">
-                Il n'y a pas de limites pour TIM, car les possibilités sont
-                infinies. Avec ce projet, nous voulons développer notre
-                imagination. Certains croient ne pas en avoir, mais tous ont la
-                capacité d'inventer de nouvelles choses. L'éclair de génie,
-                contrairement à ce que l'on croit, n'est pas dû au hasard, mais
-                à nos connaissances. En effet, c'est dans notre cerveau que des
-                liens se forment entre des éléments de notre mémoire. C'est
-                pourquoi nous voulons développer cet aspect avec le projet EinsTIM.
+                L’afficheur de progression nous permettras de partager efficacement
+                 les fichiers, les décrire et communiquer entre nous de manière 
+                 efficace. Tout à une seule adresse, nous avons l’habileté de v
+                 isiter les adresses de tous les éléments de la cohorte. Ainsi, 
+                 nous sommes connectés 24/7 et la seule limite à ce système est 
+                 la rigueur de l’intégrateur de mettre à jour son domaine. Ce 
+                 système est utile, agréable d’utilisation et s’adapte a toutes 
+                 les plateformes numériques actuelles.
               </p>
             </div>
           </div>
         </div>
       </div>
 
+      <!--|||SECTION: PHOTO DE FACTION|||-->
       <div class="row">
         <h2 class="col-12 section-title">La faction des assistants</h2>
 
@@ -107,11 +131,12 @@
     </div>
   </main>
 
+  <!--|||SECTION: FOOTER|||-->
   <footer>
     <div class="footer-inner">
-      <div class="footer-left">Copyright &copy;&nbsp;
-        <span id="copyright-name"></span>&nbsp;
-        <span id="copyright-year"></span>
+
+      <div class="footer-left">
+        <p>Mise à jour : 23/05/2020</p>
       </div>
 
       <div class="footer-right">

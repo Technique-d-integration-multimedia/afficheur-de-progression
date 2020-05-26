@@ -9,7 +9,7 @@
    -Jakob
 */
 
-// Cette fonction s'auto-exécute
+// Cette fonction s'auto-exécute 
 (function () {
   /*==================== Sticky header ====================*/
   let header = document.querySelector("header")

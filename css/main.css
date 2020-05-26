@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html, html[data-theme="clair"] { /* Variables mode clair */
+html, html[data-theme="clair"] { /* Variables mode clair */ 
   --main-color: #33312e;         /* Couleur principale */
   --main-elements-color: #fff;   /* Couleur des éléments dans la couleur principale (doit faire contraste) */
   --aside-color: #eee;

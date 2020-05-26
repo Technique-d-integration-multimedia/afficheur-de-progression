@@ -372,7 +372,7 @@ function vidmute3(){
   }
 }
 
-//set volume
+//set volume 
 function setvolume3(){
   vid3.volume = volumeslider3.value / 100;
 }

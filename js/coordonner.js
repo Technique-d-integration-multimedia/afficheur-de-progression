@@ -34,7 +34,7 @@
     choices[i].addEventListener('click', selectSection);
   }
 
-  /*==================== Sidebar toggles ====================*/
+  /*==================== Sidebar toggles ====================*/ 
   let collapsibles = document.querySelectorAll(".sidebar-section-toggle");
   for (let i = 0; i < collapsibles.length; i++) {
     collapsibles[i].addEventListener("click", function () {

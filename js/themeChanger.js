@@ -11,7 +11,7 @@
   texteSombre = "Sombre ";
 
   function mettreSombre() {
-    // Ajoute l'attribut data-theme et le définit à sombre
+    // Ajoute l'attribut data-theme et le définit à sombre 
     document.documentElement.setAttribute('data-theme', 'sombre');
     // Définit le thème dans le stockage local
     window.localStorage.setItem('theme', 'sombre');

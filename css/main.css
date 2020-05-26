@@ -18,7 +18,7 @@ html[data-theme="sombre"] {        /* Variables mode sombre */
   --background-color: #222;
   --text-color: #ddd;            /* Couleur du texte */
   --secondary-text-color: #aaa;
-}
+} 
 
 /*==================== Classes générales ====================*/
 html {

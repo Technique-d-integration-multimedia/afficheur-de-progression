@@ -4,34 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturellement TIM | par Jakob Bouchard |</title>
-
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
-
-  <!-- Kit d'icônes (lié à mon compte) -->
+<!--Icônes-->
   <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
   <script>
-    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+ // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
     const localTheme = localStorage.getItem('theme');
     if (localTheme === "sombre") {
-      // Ajoute l'attribut data-theme et le définit à sombre
+// Ajoute l'attribut data-theme et le définit à sombre
       document.documentElement.setAttribute('data-theme', 'sombre');
     }
   </script>
 </head>
 
-<body>
-  <header>
-    <div class="header-inner">
-      <h1 class="title">Naturellement <span class="title-accent">TIM</span></h1>
+<script>/*
+----------------------------------
+!!!!!LÉGENDE DES COMMENTAIRES!!!!!
+----------------------------------
+    
+<!--|||SECTION: LOREMIPSUM|||-->
+INDIQUE UN ENSEMBLE DISTINCT DE LA PAGE
+    
+<!-- LoremIpsum -->
+INDIQUE UNE SOUS-SECTION DE LA PAGE
+      
+<!-- *LoremIpsum* -->
+INDIQUE UNE FONCTION JAVASCRIPT
+    
+----------------------------------
+ */</script>
 
+<body>
+  <!--|||SECTION: HEADER|||-->
+  <header>
+  <!--Gauche du Header-->
+    <div class="header-inner">
+      <h1 class="title">Camille, Étienne et Jakob</h1>
+      <!--Menu pour mobile-->
       <div id="sandwich-menu">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
-      <nav>
+      <!--Droite du Header-->
+    <nav>
         <a href="./">Cadrer</a>
         <a class="active" href="coordonner.html">Coordonner</a>
         <a href="crediter.html">Créditer</a>
@@ -39,10 +56,13 @@
     </div>
   </header>
 
+  <!--|||SECTION: CARNET|||-->
   <div class="with-sidebar">
+    <!--Bouton d'affichage du carnet mobile-->
     <div class="fas fa-angle-right" id="sidebar-button"></div>
     <aside>
       <div class="sidebar">
+      <!--Liste de la cohorte-->
         <h4 class="sidebar-section-toggle">Cohorte</h4>
         <div class="sidebar-section">
           <ul>
@@ -124,6 +144,7 @@
           </ul>
         </div>
 
+        <!--Liste des tutoriels-->
         <h4 class="sidebar-section-toggle">Tutoriels</h4>
         <div class="sidebar-section">
           <ul>
@@ -145,6 +166,7 @@
           </ul>
         </div>
 
+        <!--Liste des influenceurs-->
         <h4 class="sidebar-section-toggle">Influenceurs</h4>
         <div class="sidebar-section">
           <ul>
@@ -174,8 +196,10 @@
       </div>
     </aside>
 
+    <!--|||SECTION: contenu de page|||-->
     <main>
       <div class="container">
+      <!--Colonne de gauche avec les boutons radio pour classer l'information-->
         <div class="row">
           <h2 class="col-12 section-title">Coordonner</h2>
           <div class="col-6" id="section-selector">
@@ -198,13 +222,14 @@
               Logigramme
             </label>
           </div>
+
+          <!--Widget Discord et téléchargement-->
           <div class="col-4">
+            <p>
+              <a href="https://github.com/Technique-d-integration-multimedia/afficheur-de-progression/archive/master.zip" download>Télécharger le code</a>
+            </p>
+            </br>
             <iframe src="https://discordapp.com/widget?id=691355087607693402&theme=dark" width="350" height="250" allowtransparency="true" frameborder="0"></iframe>
-          </div>
-          <div class="col-2">
-            <span id="mise-a-jour"></span>
-            <br>
-            <a href="https://github.com/Technique-d-integration-multimedia/afficheur-de-progression/archive/master.zip" download>Télécharger le code</a>
           </div>
         </div>
 
@@ -212,14 +237,9 @@
           <div class="row">
             <div class="coordination-infos" id="registres-info">
               <h2 class="col-12 section-title">Registres</h2>
-              <div class="col-12">
-                <p>
-                  Voici les registres<br>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Maxime aperiam consectetur vitae voluptates fugiat cum
-                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
-                  fugiat, iste recusandae nisi iusto?
-                </p>
+            <div class="col-12">
+                
+                <!--Colonne de gauche-->
                 <table>
                   <tbody>
                     <tr>
@@ -269,13 +289,8 @@
             <div class="coordination-infos" id="medias-info">
               <h2 class="col-12 section-title">Médias</h2>
               <div class="col-12">
-                <p>
-                  Voici les médias<br>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Maxime aperiam consectetur vitae voluptates fugiat cum
-                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
-                  fugiat, iste recusandae nisi iusto?
-                </p>
+                
+                <!--Colonne du centre-->
                 <table>
                   <tbody>
                     <tr>
@@ -311,13 +326,8 @@
             <div class="coordination-infos" id="aide-memoire-info">
               <h2 class="col-12 section-title">Aide-Mémoire</h2>
               <div class="col-12">
-                <p>
-                  Voici l'aide-mémoire<br>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Maxime aperiam consectetur vitae voluptates fugiat cum
-                  repellat, asperiores aut hic sed consequuntur at a? Odio eum
-                  fugiat, iste recusandae nisi iusto?
-                </p>
+                
+                <!--Colonne de droite-->
                 <table>
                   <tbody>
                     <tr>
@@ -352,13 +362,15 @@
     </main>
   </div>
 
+  <!--|||SECTION: FOOTER|||-->
   <footer>
     <div class="footer-inner">
-      <div class="footer-left">Copyright &copy;&nbsp;
-        <span id="copyright-name"></span>&nbsp;
-        <span id="copyright-year"></span>
-      </div>
-
+            <!-- Les droits d'auteur ne s'appliquent pas selon la maquette demandée
+            <div class="footer-left">Copyright &copy;&nbsp;
+              <span id="copyright-name"></span>&nbsp;
+              <span id="copyright-year"></span>
+            </div>
+            --> 
       <div class="footer-right">
         <div id="theme-toggle">
           <span id="theme-toggle-label"></span>

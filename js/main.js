@@ -41,10 +41,19 @@
   }
 
   /*============= Année actuelle, copyright =============*/
-  let footerYear = document.querySelector("#copyright-year");
-  let footerName = document.querySelector("#copyright-name");
-  let copyrightName = "EinsTIM";
+  // let footerYear = document.querySelector("#copyright-year");
+  // let footerName = document.querySelector("#copyright-name");
+  // let copyrightName = "EinsTIM";
 
-  footerYear.textContent = new Date().getFullYear();
-  footerName.textContent = copyrightName;
+  // footerYear.textContent = new Date().getFullYear();
+  // footerName.textContent = copyrightName;
+
+
+  /*==================== Dernière mise à jour ====================*/
+  let update = document.querySelector('#mise-a-jour');
+  let lastModif = new Date(Date.parse(document.lastModified));
+  lastModif = lastModif.toLocaleString('ca-FR', {timeZone: 'America/Montreal'}).split(',')[0];
+  if (update) {
+    update.innerHTML = 'Dernière mise à jour : ' + lastModif;
+  }
 })()

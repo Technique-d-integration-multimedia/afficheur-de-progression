@@ -24,19 +24,19 @@ function closeModal() {
 
 /*------------------STICKY WHEN VIDEO------------------*/
 
-//header
-var header = document.getElementById("sticky-header");
-var sticky = header.offsetTop;
-function stickHeader() {
-  header.classList.add("sticky-header");
-}
+// //header
+// var header = document.getElementById("sticky-header");
+// var sticky = header.offsetTop;
+// function stickHeader() {
+//   header.classList.add("sticky-header");
+// }
 
-//footer
-var footer = document.getElementById("sticky-footer");
-var sticky = footer.offsetTop;
-function stickFooter() {
-  footer.classList.add("sticky-footer");
-}
+// //footer
+// var footer = document.getElementById("sticky-footer");
+// var sticky = footer.offsetTop;
+// function stickFooter() {
+//   footer.classList.add("sticky-footer");
+// }
 
 
 /*------------------VIDEO CODE ORIGINAL------------------
@@ -149,7 +149,7 @@ function intializePlayer1(){
   fullscreenbtn1.addEventListener("click",toggleFullScreen1,false);
 }
 
-window.onload = intializePlayer1;
+window.addEventListener('load', intializePlayer1);
 //play and pause 
 function playPause1(){
   if(vid1.paused){
@@ -236,7 +236,7 @@ function intializePlayer2(){
   fullscreenbtn2.addEventListener("click",toggleFullScreen2,false);
 }
 
-window.onload = intializePlayer2;
+window.addEventListener('load', intializePlayer2);
 //play and pause 
 function playPause2(){
   if(vid2.paused){
@@ -323,7 +323,7 @@ function intializePlayer3(){
   fullscreenbtn3.addEventListener("click",toggleFullScreen3,false);
 }
 
-window.onload = intializePlayer3;
+window.addEventListener('load', intializePlayer3);
 //play and pause 
 function playPause3(){
   if(vid3.paused){

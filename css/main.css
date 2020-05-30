@@ -658,8 +658,9 @@ td {
 .project-container {
   margin: auto;
   width:98%;
-  border:1px solid var(--text-color);
-  padding: 5%;
+  border:2px solid var(--text-color);
+  border-radius: 7px;
+  padding: 7%;
 }
 
 .texte_video {

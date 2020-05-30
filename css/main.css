@@ -64,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+.accent-color {
+  color: var(--accent-color);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -446,6 +450,20 @@ label {
   display: block;
 }
 
+.download-title {
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.download-link {
+  padding: 15px 0;
+}
+
+.discord-widget {
+  padding: 10px 25px;
+}
+
 .coordination-section {
   left: 0;
   right: 0;
@@ -608,7 +626,7 @@ td {
     font-size: 1.1em;
     line-height: 1.3em;
   }
-
+}
 
 /*==================== Larger devices (desktops, 1366px and up) ====================*/
 @media only screen and (min-width: 1366px) {

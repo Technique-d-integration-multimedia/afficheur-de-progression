@@ -147,18 +147,13 @@ footer {
 }
 
 .footer-left,
-.footer-right,
-.footer-center{
+.footer-right {
   display: flex;
+  align-items: center;
 }
 
 .footer-right {
   margin-left: auto;
-}
-
-.footer-center{
-  margin:0 auto;
-  text-align: center;
 }
 
 /*==================== Dark mode ====================*/

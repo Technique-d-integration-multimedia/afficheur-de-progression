@@ -4,101 +4,273 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturellement TIM | par Jakob Bouchard |</title>
-
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
-
-  <!-- Kit d'icônes (lié à mon compte) -->
+<!--Icônes-->
   <script src="https://kit.fontawesome.com/35e61bd17e.js" crossorigin="anonymous"></script>
   <script>
-    // Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
+// Vérifie si le thème sombre est activé (sert à éviter un "flash" blanc durant le chargement)
     const localTheme = localStorage.getItem('theme');
     if (localTheme === "sombre") {
-      // Ajoute l'attribut data-theme et le définit à sombre
+ // Ajoute l'attribut data-theme et le définit à sombre
       document.documentElement.setAttribute('data-theme', 'sombre');
     }
   </script>
 </head>
 
-<body>
-  <header>
-    <div class="header-inner">
-      <h1 class="title">Naturellement <span class="title-accent">TIM</span></h1>
+<script>/*  
+----------------------------------
+!!!!!LÉGENDE DES COMMENTAIRES!!!!!
+---------------------------------- 
+    
+<!--|||SECTION: LOREMIPSUM|||-->
+INDIQUE UN ENSEMBLE DISTINCT DE LA PAGE
+    
+<!-- LoremIpsum -->
+INDIQUE UNE SOUS-SECTION DE LA PAGE
+    
+<!-- *LoremIpsum* -->
+INDIQUE UNE FONCTION JAVASCRIPT
+    
+----------------------------------
+ */</script>
 
+<body>
+<<<<<<< HEAD
+  <!--|||SECTION: HEADER|||-->
+=======
+>>>>>>> master
+  <header>
+
+  <!--Gauche du Header-->
+    <div class="header-inner">
+<<<<<<< HEAD
+    <h1 class="title">Camille, Étienne et Jakob</h1>
+=======
+      <h1 class="title">Naturellement <span class="title-accent">TIM</span></h1>
+>>>>>>> master
+
+    <!--Menu pour mobile-->
       <div id="sandwich-menu">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-      </div>
-
-      <nav>
-        <a href="./">Cadrer</a>
+    </div>
+    
+    <!--Droite du Header-->
+    <nav>
+        <a href="index.html">Cadrer</a>
         <a href="coordonner.html">Coordonner</a>
         <a class="active" href="crediter.html">Créditer</a>
       </nav>
     </div>
   </header>
 
+  
   <main>
-    <div class="container-full">
+  <!--|||SECTION: BANIÈRE|||-->
+    <!-- <div class="container-full">
       <div class="row">
         <div class="col-12 hero">
           <h2 class="page-title">Créditer</h2>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container-full">
+    <br><br><br>
+  <!--|||SECTION: CARNET|||-->
+    <div class="container-full margin_projects">
       <div class="row">
+<!-- *Project 1 : Camille* -->
         <div class="col-4">
           <div class="project-container">
-            <div class="project-card project-1">
-              <div class="project-info">
-                <h3 class="project-title">Bande-Annonce</h3>
-                <h4 class="project-subtitle">Automne 2019</h4>
-                <div class="project-rating" id="bande-annonce"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
-                <a href="#" class="project-download">Télécharger</a>
-              </div>
-            </div>
+<!-- *Trigger/Open The Modal* -->
+      <div class="thumbnail-container" id="myThumb1" onclick="openModal1();">
+        <img class="thumbnail" src="img/thumbnail_camille.png" />
+        <div class="overlay">
+          <div class="icon"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+<!-- *The Modal* -->
+      <div id="myModal1" class="modal">
+ <!-- *Modal content* -->
+        <div class="modal-content video_player_box">
+        <div class="modal-body">
+          <div class="video_player_box">
+          <video id="my_video1" width="100%">
+            <source src="videos/CAR_Camille_StopMotion_.mp4" type="video/mp4">
+          </video>
+          <div class="video_controls_bar">
+            <input id="seekslider1" type="range" min="0" max="100" value="0" step="1">
+            <span class="controls_left">
+            <span id="playpausebtn1" class="fas fa-play"></span>
+            <span id="curtimetext1">00:00</span> / <span id="durtimetext1">00:00</span>
+            </span>
+            <span class="controls_center">
+            <a href="videos/CAR_Camille_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+            </span>
+            <span class="controls_right">
+            <span id="mutebtn1" class="fas fa-volume-up"></span>
+            <input id="volumeslider1" type="range" min="0" max="100" value="100" step="1">
+            <span id="fullscreenbtn1" class="fas fa-expand"></span>
+            <span class="close"><a href="crediter.html">&times;</a></span>
+<!-- *Ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X* -->
+            </span>
+          </div>
           </div>
         </div>
-
+              </div>
+      </div>
+      <div class="texte_video">
+        <p>Le savoir-faire des REMARQUABLEMENT TIM</p><br>
+          <p>Camille Caron<br>7 mai 2020</p>
+          <p>
+            <br />
+            <strong>Étienne:</strong> Sobre, efficace, exécution précise des noms pendant la présentation des factions. 
+            À corriger: les reflets en haut de l'écran sur certain clichés. Réussite totale.
+            <br />
+            <br />
+            <strong>Jakob:</strong> La vidéo d'Étienne est super intéressante et différente. Elle est très dynamique et 
+            la narration audio rend les textes plus intéressants et faciles à lire et comprendre. Comme la plupart des 
+            vidéos, l'éclairage varie et la caméra n'est pas toujours stable, mais le résultat est quand même très réussi.
+            <br />
+            <br />
+          </p>
+      </div>	
+        </div>
+    </div>
+    
+<!-- *Project 2 : Jakob* -->
         <div class="col-4">
           <div class="project-container">
-            <div class="project-card project-2">
-              <div class="project-info">
-                <h3 class="project-title">Savoir-Faire</h3>
-                <h4 class="project-subtitle">Hiver 2020</h4>
-                <div class="project-rating" id="savoir-faire"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
-                <a href="#" class="project-download">Télécharger</a>
-              </div>
-            </div>
+<!-- *Pour ouverture de 'The Modal'* -->
+      <div class="thumbnail-container" id="myThumb2" onclick="openModal2();">
+        <img class="thumbnail" src="img/thumbnail_jakob.png" />
+        <div class="overlay">
+          <div class="icon"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+ <!-- *The Modal* -->
+      <div id="myModal2" class="modal">
+<!-- *Modal content* -->
+        <div class="modal-content video_player_box">
+        <div class="modal-body">
+          <div class="video_player_box">
+          <video id="my_video2" width="100%">
+            <source src="videos/BOU_Jakob_StopMotion_.mp4" type="video/mp4">
+          </video>
+          <div class="video_controls_bar">
+            <input id="seekslider2" type="range" min="0" max="100" value="0" step="1">
+            <span class="controls_left">
+            <span id="playpausebtn2" class="fas fa-play"></span>
+            <span id="curtimetext2">00:00</span> / <span id="durtimetext2">00:00</span>
+            </span>
+            <span class="controls_center">
+            <a href="videos/BOU_Jakob_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+            </span>
+            <span class="controls_right">
+            <span id="mutebtn2" class="fas fa-volume-up"></span>
+            <input id="volumeslider2" type="range" min="0" max="100" value="100" step="1">
+            <span id="fullscreenbtn2" class="fas fa-expand"></span>
+            <span class="close"><a href="crediter.html">&times;</a></span>
+<!-- *Ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X*-->
+            </span>
+          </div>
           </div>
         </div>
-
+              </div>
+      </div>
+      <div class="texte_video">
+        <p>Le savoir-faire des REMARQUABLEMENT TIM</p><br>
+          <p>Jakob Bouchard<br>14 mai 2020</p>
+          <p>
+            <br />
+            <strong>Étienne:</strong> Dynamque, osé et vivant. L'utilisation des mains est un grand paris qui s'avère très payant. 
+            À surveiller la lumière dans certaines séquences.
+            <br />
+            <br />
+            <strong>Camille:</strong> J'aime beaucoup le concept du stop motion, puisqu'il est très dynamique et intéressant à regarder. 
+            Une amélioration possible, selon moi, serait d'avoir utilisé plus de photos pour permettre un résultat plus fluide et éviter 
+            d'avoir les mêmes images en boucles. 
+            <br />
+            <br />
+          </p>
+      </div>	
+        </div>
+    </div>
+    
+<!-- *Project 3 : Étienne* -->
         <div class="col-4">
           <div class="project-container">
-            <div class="project-card project-3">
-              <div class="project-info">
-                <h3 class="project-title">Documentaire</h3>
-                <h4 class="project-subtitle">Automne 2020</h4>
-                <div class="project-rating" id="documentaire"><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span></div>
-                <a href="#" class="project-download">Télécharger</a>
-              </div>
-            </div>
+<!-- *Trigger/Open The Modal* -->
+      <div class="thumbnail-container" id="myThumb3" onclick="openModal3();">
+        <img class="thumbnail" src="img/thumbnail_etienne.png" />
+        <div class="overlay">
+          <div class="icon"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+<!-- *The Modal *-->
+      <div id="myModal3" class="modal">
+<!-- *Modal content* -->
+        <div class="modal-content video_player_box">
+        <div class="modal-body">
+          <div id="video_player_box3">
+          <video id="my_video3" width="100%">
+            <source src="videos/CHA_Etienne_StopMotion_.mp4" type="video/mp4">
+          </video>
+          <div class="video_controls_bar">
+            <input id="seekslider3" type="range" min="0" max="100" value="0" step="1">
+            <span class="controls_left">
+            <span id="playpausebtn3" class="fas fa-play"></span>
+            <span id="curtimetext3">00:00</span> / <span id="durtimetext3">00:00</span>
+            </span>
+            <span class="controls_center">
+            <a href="videos/CHA_Etienne_StopMotion_.mp4" download><i class="fa fa-download"></i></a>
+            </span>
+            <span class="controls_right">
+            <span id="mutebtn3" class="fas fa-volume-up"></span>
+            <input id="volumeslider3" type="range" min="0" max="100" value="100" step="1">
+            <span id="fullscreenbtn3" class="fas fa-expand"></span>
+            <span class="close"><a href="crediter.html">&times;</a></span>
+<!-- *Ajouter onclick="closeModal()" dans le span et retirer la balise a pour rester sur page créditer en cliquant sur X*-->
+            </span>
+          </div>
           </div>
         </div>
+              </div>
+      </div>
+      <div class="texte_video">
+        <p>Le savoir-faire des REMARQUABLEMENT TIM</p><br>
+          <p>Étienne Chandonnet<br>8 mai 2020</p>
+          <p>
+            <br />
+            <strong>Camille:</strong> J'ai trouvé le concept général du stop motion très original et ingénieux. 
+            La narration audio était aussi un très bon ajout. Il y a quelques variations d'éclairage, mais 
+            le résultat est très réussi. 
+            <br />
+            <br />
+            <strong>Jakob:</strong> Le stop motion de Camille est vraiment agréable et relaxant à regarder. Les mouvements 
+            sont fluides et le texte est facilement lisible. Cependant, quand les images s'arrêtent, ça pourrait faire croire 
+            que la vidéo a gelée, mais je comprends que ce n'est pas facile de savoir la durée nécessaire.
+            <br />
+            <br />
+          </p>
+      </div>
+        </div>
+    </div>
       </div>
     </div>
   </main>
-
+  
+  <!--|||SECTION: FOOTER|||-->
   <footer>
     <div class="footer-inner">
+      <!-- Les droits d'auteur ne s'appliquent pas selon la maquette demandée
       <div class="footer-left">Copyright &copy;&nbsp;
         <span id="copyright-name"></span>&nbsp;
         <span id="copyright-year"></span>
       </div>
-
+      -->
       <div class="footer-right">
         <div id="theme-toggle">
           <span id="theme-toggle-label"></span>
@@ -110,6 +282,8 @@
 
   <script src="js/main.js"></script>
   <script src="js/themeChanger.js"></script>
-  <script src="js/rating.js"></script>
+  <!-- Unneeded for now -->
+  <!-- <script src="js/rating.js"></script> -->
+  <script src="js/crediter.js"></script>
 </body>
 </html>

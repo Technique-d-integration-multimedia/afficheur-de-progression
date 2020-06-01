@@ -1,40 +1,41 @@
 (function () {
   /*==================== Boutons pour choisir la section ====================*/
-  let sectionSelector = document.querySelector('#section-selector');
-  let labels = [];
-  let choices = [];
-  for (let i = 0; i < sectionSelector.childNodes.length; i++) {
-    let child = sectionSelector.childNodes[i];
-    if (child.tagName == 'LABEL') {
-      labels.push(child);
-    }
-  }
-  for (let i = 0; i < labels.length; i++) {
-    for (let j = 0; j < labels[i].childNodes.length; j++) {
-      let child = labels[i].childNodes[j];
-      if (child.tagName == 'INPUT') {
-        choices.push(child);
-      }
-    }
-  }
+  // Plus nécessaire selon le modèle
+  // let sectionSelector = document.querySelector('#section-selector');
+  // let labels = [];
+  // let choices = [];
+  // for (let i = 0; i < sectionSelector.childNodes.length; i++) {
+  //   let child = sectionSelector.childNodes[i];
+  //   if (child.tagName == 'LABEL') {
+  //     labels.push(child);
+  //   }
+  // }
+  // for (let i = 0; i < labels.length; i++) {
+  //   for (let j = 0; j < labels[i].childNodes.length; j++) {
+  //     let child = labels[i].childNodes[j];
+  //     if (child.tagName == 'INPUT') {
+  //       choices.push(child);
+  //     }
+  //   }
+  // }
 
-  function selectSection() {
-    for (let i = 0; i < choices.length; i++) {
-      let field = document.querySelector('#' + choices[i].id + "-info");
-      if (choices[i].checked) {
-        field.classList.add('active');
-      } else {
-        field.classList.remove('active');
-      }
-    }
-  }
+  // function selectSection() {
+  //   for (let i = 0; i < choices.length; i++) {
+  //     let field = document.querySelector('#' + choices[i].id + "-info");
+  //     if (choices[i].checked) {
+  //       field.classList.add('active');
+  //     } else {
+  //       field.classList.remove('active');
+  //     }
+  //   }
+  // }
 
-  selectSection();
-  for (let i = 0; i < choices.length; i++) {
-    choices[i].addEventListener('click', selectSection);
-  }
+  // selectSection();
+  // for (let i = 0; i < choices.length; i++) {
+  //   choices[i].addEventListener('click', selectSection);
+  // }
 
-  /*==================== Sidebar toggles ====================*/
+  /*==================== Sidebar toggles ====================*/ 
   let collapsibles = document.querySelectorAll(".sidebar-section-toggle");
   for (let i = 0; i < collapsibles.length; i++) {
     collapsibles[i].addEventListener("click", function () {
@@ -62,11 +63,4 @@
   sidebarButton.addEventListener('click', function () {
     sidebar.classList.toggle('sidebar-open')
   })
-
-  /*==================== Dernière mise à jour ====================*/
-  let update = document.querySelector('#mise-a-jour');
-  let lastModif = new Date(Date.parse(document.lastModified));
-  lastModif = lastModif.toLocaleString('ca-FR', {timeZone: 'America/Montreal'}).split(',')[0];
-  update.innerHTML = 'Dernière mise à jour : ' + lastModif;
-
 })()

@@ -5,7 +5,7 @@
   let documentaireRating = localStorage.getItem('documentaire');
   let savedRatings = [bandeAnnonceRating, savoirFaireRating, documentaireRating]
 
-  /* Vive le code semi-compréhensible */
+  /* Vive le code semi-compréhensible */ 
   function addRating() {
     let element = this;
     let childrens = this.parentElement.childNodes;
